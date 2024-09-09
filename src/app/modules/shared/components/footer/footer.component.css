@@ -1,0 +1,22 @@
+#fondo{
+    background-color: #07501D;
+}
+
+.iconosredes{
+    color: white;
+    margin-right: 10px;
+}
+
+#derechafooter{
+
+    border-left: 1px solid hsla(0, 0%, 100%, .5);
+
+}
+
+.contenedorr{
+    display: flex-;
+}
+
+.logo{
+    margin-left: 200px;
+}
