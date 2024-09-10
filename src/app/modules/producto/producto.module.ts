@@ -4,33 +4,38 @@ import { CommonModule } from '@angular/common';
 import { ProductoRoutingModule } from './producto-routing.module';
 
 // VISTAS DEL MÓDULO PRODUCTO
-import { ProductoComponent } from './pages/producto/producto.component';
-import { AlimentacionComponent } from './pages/alimentacion/alimentacion.component';
-import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
-import { JugueteComponent } from './pages/juguete/juguete.component';
+import { EstanteriasComponent } from './pages/estanterias/estanterias.component';
+import { ArmariosComponent } from './pages/armarios/armarios.component';
+import { MesasComponent } from './pages/mesas/mesas.component';
+import { SillonesComponent } from './pages/sillones/sillones.component';
 
 // COMPONENTES LOCALES
 import { CardComponent } from './components/card/card.component';
 import { CardAlimentacionComponent } from './components/card-alimentacion/card-alimentacion.component';
 
+
 @NgModule({
   declarations: [
-    ProductoComponent,
-    AlimentacionComponent,
-    IndumentariaComponent,
-    JugueteComponent,
+    ArmariosComponent,
+    MesasComponent,
+    SillonesComponent,
+    EstanteriasComponent,
     CardComponent,
-    CardAlimentacionComponent
+    CardAlimentacionComponent,
+    EstanteriasComponent,
+    ArmariosComponent,
+    MesasComponent,
+    SillonesComponent
   ],
   imports: [
     CommonModule,
     ProductoRoutingModule
   ],
   exports: [
-    ProductoComponent,
-    AlimentacionComponent,
-    IndumentariaComponent,
-    JugueteComponent,
+    ArmariosComponent,
+    MesasComponent,
+    SillonesComponent,
+    EstanteriasComponent,
     CardComponent,
     CardAlimentacionComponent
   ]
