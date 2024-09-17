@@ -1,3 +1,8 @@
-h1{
+@font-face {
+    font-family: Lemon;
+    src: url(/src/fonts/Howdy\ Lemon.otf);
+}
+h1 {
     text-align: center;
+    font-family: Lemon;
 }
