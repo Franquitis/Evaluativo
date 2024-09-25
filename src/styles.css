@@ -1,26 +1,14 @@
-
-
-/*Estilos Para Modo Oscuro*/
-body{
-    transition: all 1.5 ease;
-}
-#toggle{
-    display: none;
-}
-#label_toggle{
-    position: static;
-    cursor: pointer;
-}
-.dark{
-    background-color: black;
-    color: white;
-    transition: all 1.5 ease;
+@font-face {
+    font-family: fuente;
+    src: url(/src/fonts/fuente1.ttf);
 }
 
-*{
-    color: black;
+.vistas{
+    font-family: fuente;
+
 }
 
 html, body { height: 100%;background-color:#07501db3 ; }
-body { margin: 0; }
+
+
 

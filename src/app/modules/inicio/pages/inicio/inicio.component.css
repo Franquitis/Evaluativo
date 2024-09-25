@@ -1,8 +1,24 @@
 @font-face {
-    font-family: Lemon;
-    src: url(/src/fonts/Howdy\ Lemon.otf);
+    font-family: fuente;
+    src: url(../../../../../fonts/fuente1.ttf);
 }
+
 h1 {
+    margin-top: 30px;
     text-align: center;
-    font-family: Lemon;
+    font-family: fuente;
+    font-size: 50px;
+    color: rgb(250, 100, 27);
+    text-shadow: -3px 3px 0px rgba(156, 65, 23, 1);
+}
+
+.container {
+    
+    background-color: rgba(0, 0, 0, 0.297);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
 }

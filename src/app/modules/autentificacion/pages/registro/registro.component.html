@@ -4,20 +4,20 @@
 
         <i class="material-icons" style="font-size: 200px;">person</i>
         
-        <!-- Nombre de usuario -->
+         <!--Nombre de usuario--> 
         <mat-form-field appearance="fill">
             <mat-label>Ingrese un nombre de usuario:</mat-label>
-            <!-- ngModel = directiva BIDIRECCIONAL utilizada para formularios -->
+          <!--  ngModel = directiva BIDIRECCIONAL utilizada para formularios--> 
             <input [(ngModel)]="usuarios.nombre" matInput placeholder="Ej: Pepito" required>
         </mat-form-field>
 
-        <!-- Apellido de usuario -->
+         <!--Apellido de usuario -->
         <mat-form-field appearance="fill">
             <mat-label>Ingrese su apellido:</mat-label>
             <input [(ngModel)]="usuarios.apellido" matInput placeholder="Ej: Peréz" required>
         </mat-form-field>
 
-        <!-- Email de usuario -->
+         <!--Email de usuario -->
         <mat-form-field appearance="fill">
             <mat-label>Ingrese su email:</mat-label>
             <input [(ngModel)]="usuarios.email" matInput placeholder="Ej: pepitoperez2022@gmail.com" required>
@@ -32,7 +32,7 @@
             </select>
         </mat-form-field>
 
-        <!-- Contraseña de usuario -->
+        <!-- Contraseña de usuario-->
         <mat-form-field>
             <mat-label>Ingrese su contraseña:</mat-label>
             <input [(ngModel)]="usuarios.password" matInput [type]="hide ? 'password' : 'text'" #input minlength="6" required>
@@ -42,7 +42,7 @@
             <mat-hint align="start">Mínimo:6/{{input.value.length}}</mat-hint>
         </mat-form-field>
 
-        <!-- Botón para ENVIAR la información a la Base de Datos-->
+    <!--Botón para ENVIAR la información a la Base de Datos-->
         <button class="boton" mat-raised-button color="primary" (click)="registrar()">Registrar</button>
     </div>
 </div>

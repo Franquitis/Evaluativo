@@ -63,7 +63,7 @@ export class RegistroComponent {
     .then(res => {
       Swal.fire({
         title: "¡Buen trabajo!",
-        text: "¡Se pudo registrar con éxito! :)",
+        text: "¡Se pudo registrar con éxito!",
         icon: "success"
       });
 
@@ -74,7 +74,7 @@ export class RegistroComponent {
     .catch(error => {
       Swal.fire({
         title: "¡Oh no!",
-        text: "Hubo un error al registrar un nuevo usuario :( \n"+error,
+        text: "Hubo un error al registrar un nuevo usuario \n"+error,
         icon: "error"
       });
     })

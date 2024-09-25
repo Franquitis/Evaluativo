@@ -3,6 +3,7 @@
 }
 
 
+
 /* CORRESPONDEN A PANTALLAS MÁS PEQUEÑAS -> ej.: celulares */
 @media (min-width: 300px) and (max-width: 700px){
     mat-toolbar{
@@ -86,4 +87,9 @@ mat-icon {
 .luna{
     color: #FA641B;
     width: 20px;
+}
+
+a{
+   font-size: 20px; 
+   text-shadow: -2px 1px 0px rgb(119, 49, 17);
 }
