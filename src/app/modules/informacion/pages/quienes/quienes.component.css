@@ -1,0 +1,64 @@
+.experience {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0,0,0,1);
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+h3{
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0,0,0,1);
+}
+
+
+
+.imagenes{
+    width: 400px;
+    border-radius: 40px;
+}
+
+.titulos{
+padding-top: 20px;
+
+}
+
+.fondo{
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 30px;
+    box-shadow: 2px 0px 36px 11px rgba(0, 0, 0, 0.404);
+-webkit-box-shadow: 2px 0px 36px 11px rgba(0, 0, 0, 0.404);
+-moz-box-shadow: 2px 0px 36px 11px rgba(0, 0, 0, 0.404);
+
+}
+
+#im{
+    padding-top: 20px;
+}
+
+#imb{
+    padding-bottom: 20px;
+}

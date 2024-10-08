@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
 import { InformacionRoutingModule } from './informacion-routing.module';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { QuienesComponent } from './pages/quienes/quienes.component';
@@ -13,7 +15,11 @@ import { QuienesComponent } from './pages/quienes/quienes.component';
   ],
   imports: [
     CommonModule,
-    InformacionRoutingModule
+    InformacionRoutingModule,
+    MatGridListModule
+  ],
+  exports:[
+    MatGridListModule
   ]
 })
 export class InformacionModule { }
