@@ -3,7 +3,8 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="logo"></a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -13,9 +14,28 @@
         <li class="nav-item">
           <a class="nav-link active vistas" aria-current="page" routerLink="/inicio" id="pinicio">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active vistas" aria-current="page" routerLink="" id="pproductos">Productos</a>
-        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle vistas"  id="pproductos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul id="dropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="">Action</a></li>
+            <li><a class="dropdown-item" routerLink="">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="">Something else here</a></li>
+          </ul>
+        </li>-->
+
+        <button mat-button [matMenuTriggerFor]="menu" class="vistas" id="pproductos">Menu</button>
+        <mat-menu #menu="matMenu" class="desplegable">
+          <button mat-menu-item>Sillones</button>
+          <button mat-menu-item>Armarios</button>
+          <button mat-menu-item>Mesas</button>
+          <button mat-menu-item>Estanterias</button>
+        </mat-menu>
+
+
         <li class="nav-item">
           <a class="nav-link active vistas" aria-current="page" routerLink="/quienes" id="pquienes">Sobre Nosotros</a>
         </li>
@@ -35,15 +55,16 @@
         <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
         <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
         <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
-        <button mat-menu-item (click)="ingresar()" *ngIf="logueado"routerLink="/registroinicio">Registrarse/Iniciar Sesion</button>
+        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registroinicio">Registrarse/Iniciar
+          Sesion</button>
       </mat-menu>
-    
-      <!--Carrito-->  
+
+      <!--Carrito -->
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>shopping_cart</mat-icon>
       </button>
 
-      
+
     </div>
 
   </div>

@@ -62,3 +62,16 @@ padding-top: 20px;
 #imb{
     padding-bottom: 20px;
 }
+
+#logo{
+    border-radius: 100%;
+
+    width: 300px;
+}
+
+.logoubicacion{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;
+}

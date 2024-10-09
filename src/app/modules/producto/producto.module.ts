@@ -12,6 +12,10 @@ import { SillonesComponent } from './pages/sillones/sillones.component';
 // COMPONENTES LOCALES
 import { CardComponent } from './components/card/card.component';
 import { CardAlimentacionComponent } from './components/card-alimentacion/card-alimentacion.component';
+import { CardArmariosComponent } from './components/card-armarios/card-armarios.component';
+import { CardMesasComponent } from './components/card-mesas/card-mesas.component';
+import { CardEstanteriasComponent } from './components/card-estanterias/card-estanterias.component';
+import { CardSillonesComponent } from './components/card-sillones/card-sillones.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { CardAlimentacionComponent } from './components/card-alimentacion/card-a
     EstanteriasComponent,
     ArmariosComponent,
     MesasComponent,
-    SillonesComponent
+    SillonesComponent,
+    CardArmariosComponent,
+    CardMesasComponent,
+    CardEstanteriasComponent,
+    CardSillonesComponent
   ],
   imports: [
     CommonModule,
