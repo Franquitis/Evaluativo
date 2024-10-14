@@ -20,7 +20,7 @@
                 <img src="{{producto.imagen}}" alt="{{producto.alt}}" width="100px">
             </td>
             <td>{{producto.nombre}}</td>
-            <td>{{producto.precio}}</td>
+            <td>${{producto.precio}}</td>
             <td>{{producto.descripcion}}</td>
             <td>{{producto.categoria}}</td>
 
@@ -61,13 +61,13 @@
                 <div class="mb-3">
                     <label class="form-label">Ingrese el nombre del producto:</label>
                     <input class="form-control" type="text" formControlName="nombre"
-                        placeholder="Ej.: Medias de chanchitos">
+                        placeholder="Ej.: Mesa redonda comedor">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Ingrese una descripción:</label>
                     <input class="form-control" type="text" formControlName="descripcion"
-                        placeholder="Ej.: Medias de chanchitos de algodón premium">
+                        placeholder="Ej.: Mesa redonda de roble">
                 </div>
 
                 <div class="mb-3">
@@ -95,7 +95,7 @@
                 <div class="mb-3">
                     <label class="form-label">Ingrese texto alternativo de la imagen:</label>
                     <input class="form-control" type="text" formControlName="alt"
-                        placeholder="Ej.: Medias de chanchito">
+                        placeholder="Ej.: Mesa">
                 </div>
             </div>
 

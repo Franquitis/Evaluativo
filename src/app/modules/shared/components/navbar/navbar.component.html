@@ -27,12 +27,12 @@
           </ul>
         </li>-->
 
-        <button mat-button [matMenuTriggerFor]="menu" class="vistas" id="pproductos">Menu</button>
+        <button mat-button [matMenuTriggerFor]="menu" class="vistas" id="pproductos">Productos</button>
         <mat-menu #menu="matMenu" class="desplegable">
-          <button mat-menu-item>Sillones</button>
-          <button mat-menu-item>Armarios</button>
-          <button mat-menu-item>Mesas</button>
-          <button mat-menu-item>Estanterias</button>
+          <button mat-menu-item routerLink="sillones">Sillones</button>
+          <button mat-menu-item routerLink="armarios">Armarios</button>
+          <button mat-menu-item routerLink="mesas">Mesas</button>
+          <button mat-menu-item routerLink="estanterias">Estanterias</button>
         </mat-menu>
 
 

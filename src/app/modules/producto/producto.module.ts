@@ -10,13 +10,14 @@ import { MesasComponent } from './pages/mesas/mesas.component';
 import { SillonesComponent } from './pages/sillones/sillones.component';
 
 // COMPONENTES LOCALES
-import { CardComponent } from './components/card/card.component';
-import { CardAlimentacionComponent } from './components/card-alimentacion/card-alimentacion.component';
+
 import { CardArmariosComponent } from './components/card-armarios/card-armarios.component';
 import { CardMesasComponent } from './components/card-mesas/card-mesas.component';
 import { CardEstanteriasComponent } from './components/card-estanterias/card-estanterias.component';
 import { CardSillonesComponent } from './components/card-sillones/card-sillones.component';
 
+//COMPONENTES ANGULAR
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -24,28 +25,24 @@ import { CardSillonesComponent } from './components/card-sillones/card-sillones.
     MesasComponent,
     SillonesComponent,
     EstanteriasComponent,
-    CardComponent,
-    CardAlimentacionComponent,
-    EstanteriasComponent,
-    ArmariosComponent,
-    MesasComponent,
-    SillonesComponent,
     CardArmariosComponent,
     CardMesasComponent,
     CardEstanteriasComponent,
-    CardSillonesComponent
+    CardSillonesComponent,
+    
   ],
   imports: [
     CommonModule,
-    ProductoRoutingModule
+    ProductoRoutingModule,
+    MatGridListModule
   ],
   exports: [
     ArmariosComponent,
     MesasComponent,
     SillonesComponent,
     EstanteriasComponent,
-    CardComponent,
-    CardAlimentacionComponent
+    MatGridListModule
+
   ]
 })
 export class ProductoModule { }
