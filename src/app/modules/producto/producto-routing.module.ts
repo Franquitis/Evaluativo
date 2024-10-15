@@ -7,6 +7,8 @@ import { MesasComponent } from './pages/mesas/mesas.component';
 import { ArmariosComponent } from './pages/armarios/armarios.component';
 import { EstanteriasComponent} from './pages/estanterias/estanterias.component';
 
+
+
 const routes: Routes = [
   {
     path:"sillones",component:SillonesComponent
