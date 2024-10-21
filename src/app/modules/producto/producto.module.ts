@@ -18,6 +18,8 @@ import { CardSillonesComponent } from './components/card-sillones/card-sillones.
 
 //COMPONENTES ANGULAR
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -34,15 +36,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
   imports: [
     CommonModule,
     ProductoRoutingModule,
-    MatGridListModule
+    MatGridListModule,
+    MatIconModule
   ],
   exports: [
     ArmariosComponent,
     MesasComponent,
     SillonesComponent,
     EstanteriasComponent,
-    MatGridListModule
-
+    MatGridListModule,
+    MatIconModule
   ]
 })
 export class ProductoModule { }

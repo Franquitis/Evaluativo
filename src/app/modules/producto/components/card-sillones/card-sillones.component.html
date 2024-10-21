@@ -1,15 +1,19 @@
-<div class="contenido" *ngFor="let producto of coleccionSillones">
+<div class="row">
+    <div class="col-lg-4 pp" *ngFor="let producto of coleccionSillones">
     <div class="card" style="width: 18rem;">
         <img src="{{producto.imagen}}" class="card-img-top" alt="{{producto.alt}}">
 
         <div class="card-body">
-            <h5 class="card-title">{{producto.imagen}}</h5>
-            <p class="card-text">{{producto.precio}}</p>
+            <h5 class="card-title">{{producto.nombre}}</h5>
+            <p class="card-text">{{producto.descripcion}}</p>
+            <p class="card-text">${{producto.precio}}</p>
 
-            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" 
-            data-bs-target="#verMas" (click)="mostrarVer(producto)">Ver más</button>
+            <a href="#" class="btn btn-primary agregar" data-bs-toggle="modal"
+            data-bs-target="#verMas" (click)="mostrarVer(producto)">Agregar al <mat-icon class="carrito">shopping_cart</mat-icon> </a>
         </div>
     </div>
+</div>
+
 </div>
 
 <!-- Modal para ver más información -->
