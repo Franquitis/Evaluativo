@@ -8,6 +8,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
+import { CardInicioComponent } from '../producto/components/card-inicio/card-inicio.component';
 
 
 
@@ -16,7 +17,8 @@ import {MatIconModule} from '@angular/material/icon';
   declarations: [
     InicioComponent,
     CardComponent,
-    CarruselComponent
+    CarruselComponent,
+    CardInicioComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     CardComponent,
     CarruselComponent,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    CardInicioComponent
   ]
 })
 export class InicioModule { }

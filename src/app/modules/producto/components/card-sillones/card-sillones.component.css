@@ -1,3 +1,77 @@
+.product-card {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .pp{
+    padding-bottom: 20px;
+
+}
+
+
+  .card-img-top {
+    height: 250px;
+    object-fit: contain;
+  }
+
+.card-body{
+    background-color: rgb(218, 218, 218);
+border-bottom-left-radius:10px ;
+border-bottom-right-radius:10px ;
+height: 300px;
+}
+
+.comprar{
+    justify-content: center;
+        display: flex;
+}
+
+.card:hover{
+    
+    box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
+    cursor: pointer;
+}
+  
+  .price-discount {
+    font-size: 1.5rem;
+  }
+  
+  .price-original {
+    font-size: 1rem;
+
+  }
+  .precio{
+    color: #FA641B;
+  }
+
+  
+  
+  .installments {
+    font-size: 0.9rem;
+  }
+  
+  .btn-block {
+    justify-content: center;
+    display: flex;
+    background-color: #FA641B;
+    color: white;
+  }
+  
+  .btn-block:hover {
+    justify-content: center;
+    display: flex;
+    background-color: #9e4112;
+  }
+  
+
+
+
+/*
 .card{
     height: 500px;
     background-color: rgb(218, 218, 218);
@@ -41,4 +115,4 @@
         -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
         -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
         cursor: pointer;
-    }
+    }*/

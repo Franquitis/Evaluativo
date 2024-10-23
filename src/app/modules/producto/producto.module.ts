@@ -19,6 +19,8 @@ import { CardSillonesComponent } from './components/card-sillones/card-sillones.
 //COMPONENTES ANGULAR
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { CardInicioComponent } from './components/card-inicio/card-inicio.component';
+
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     CardMesasComponent,
     CardEstanteriasComponent,
     CardSillonesComponent,
+   
     
   ],
   imports: [
