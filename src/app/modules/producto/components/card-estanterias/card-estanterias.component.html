@@ -60,7 +60,9 @@
             </div>
 
             <div class="modal-body">
-                <img src="{{productoSeleccionado.imagen}}" alt="{{productoSeleccionado.alt}}">
+                <div class="contenedor-imagen">
+                    <img src="{{productoSeleccionado.imagen}}" class="img-modal" alt="{{productoSeleccionado.alt}}">
+                </div>
 
                 <div class="mb-3">
                     {{productoSeleccionado.descripcion}}

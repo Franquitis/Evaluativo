@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navegador">
 
-  <div class="container-fluid">
+  <div class="container-fluid navv">
     <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="logo"></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -32,17 +32,14 @@
           <a class="nav-link active vistas" aria-current="page" routerLink="/contacto" id="pcontactos">Contactos</a>
         </li>
         <li class="nav-item">
-        <button id="menuAdmin" mat-button routerLink="/admin">Admin</button>
+        <button id="menuAdmin" class="vistas" mat-button routerLink="/admin">Admin</button>
       </li>
       </ul>
 
-      <form class="d-flex" role="search" id="buscador">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-success" type="submit" id="botonb">Buscar</button>
-      </form>
+    
 
       <!--Menú desplegable para manejar todo el acceso de los usuarios en la página -->
-      <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+      <button mat-icon-button [matMenuTriggerFor]="usuario" ><mat-icon>person</mat-icon></button>
       <mat-menu #usuario="matMenu">
         <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
         <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
@@ -52,7 +49,7 @@
       </mat-menu>
 
       <!--Carrito -->
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <button mat-icon-button class="example-icon favorite-icon " aria-label="Example icon-button with heart icon">
         <mat-icon>shopping_cart</mat-icon>
       </button>
 

@@ -1,11 +1,9 @@
-@font-face {
-    font-family: fuente;
-    src: url(/src/fonts/fuente1.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=New+Amsterdam&display=swap');
 
 .vistas{
-    font-family: fuente;
-font-size: 20px;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 

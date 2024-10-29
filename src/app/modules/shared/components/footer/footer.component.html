@@ -1,19 +1,19 @@
 <div id="fondo">
 
-    <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-list [cols]="cols" rowHeight="2:1">
         <mat-grid-tile>
-            <mat-list role="list">
+            <mat-list role="list" class="columnas">
                 <mat-list-item role="listitem"><strong>AYUDA</strong></mat-list-item>
-                <mat-list-item role="listitem">Contacto</mat-list-item>
-                <mat-list-item role="listitem">Preguntas Frecuentes</mat-list-item>
-                <mat-list-item role="listitem">Registrate Hoy</mat-list-item>
+                <mat-list-item role="listitem" class="itemm" routerLink="/contacto">Contacto</mat-list-item>
+                <mat-list-item role="listitem" class="itemm">Preguntas Frecuentes</mat-list-item>
+                <mat-list-item role="listitem" class="itemm" routerLink="/registroinicio">Registrate Hoy</mat-list-item>
             </mat-list>
         </mat-grid-tile>
 
         <mat-grid-tile>
-            <mat-list role="list">
+            <mat-list role="list" class="columnas">
                 <mat-list-item role="listitem" ><strong>DECO | NOSOTROS</strong> </mat-list-item>
-                <mat-list-item role="listitem">Sobre Nosotros</mat-list-item>
+                <mat-list-item role="listitem" class="itemm" routerLink="/quienes">Sobre Nosotros</mat-list-item>
                 <mat-list-item role="listitem">Seguinos!</mat-list-item>
                 <mat-list-item role="listitem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
@@ -51,7 +51,7 @@
         </mat-grid-tile>
 
         <mat-grid-tile>
-            <mat-list role="list" id="derechafooter">
+            <mat-list role="list" id="derechafooter" class="columnas">
                 <div class="contenedorr">
                  
                         <img src="./assets/logocet30-80.png" alt="" class="logo">

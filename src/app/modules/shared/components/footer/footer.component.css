@@ -1,22 +1,102 @@
-#fondo{
+#fondo {
     background-color: #07501D;
+    padding: 20px;
 }
 
-.iconosredes{
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
+@media (min-width: 300px) and (max-width: 700px) {
+    #fondo {
+        display: flex;
+        flex-direction: column;
+        background-color: #07501D;
+        padding: 16px;
+    }
+    span {
+        font-family: "Bree Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Agrupa las columnas "AYUDA" y "DECO | NOSOTROS" */
+    mat-grid-tile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajusta la sección de desarrollador */
+    #derechafooter {
+        padding-top: 16px;
+        border-left: none;
+
+        /* Asegura que el borde izquierdo esté desactivado */
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .contenedorr {
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste de márgenes para redes sociales y logo */
+    .iconosredes {
+        padding-bottom: 10px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .logo {
+        margin: 10px auto;
+        display: block;
+    }
 }
 
-#derechafooter{
+@media (min-width: 701px) {
+    mat-grid-list {
+        width: 100%;
+    }
 
-    border-left: 1px solid hsla(0, 0%, 100%, .5);
+    .contenedorr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-}
 
-.contenedorr{
-    display: flex-;
-}
 
-.logo{
-    margin-left: 200px;
+
+
+    span {
+        font-family: "Bree Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #fondo {
+        background-color: #07501D;
+    }
+
+    .iconosredes {
+        color: rgb(0, 0, 0);
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #derechafooter {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px solid hsl(0, 0%, 0%);
+
+    }
+
+
 }
