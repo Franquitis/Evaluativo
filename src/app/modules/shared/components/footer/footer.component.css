@@ -1,7 +1,33 @@
 #fondo {
     background-color: #07501D;
     padding: 20px;
+   
 }
+
+.encontranos{
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.mm{
+font-size: 30px;
+color: white;
+
+font-family: "Bree Serif", serif;
+font-weight: 400;
+
+font-style: normal;
+}
+.copyright{
+    text-align: center;
+    border-top: solid 1px white;
+}
+
+.copy{
+    color: white;
+    padding-top: 20px;
+}
+
 
 @media (min-width: 300px) and (max-width: 700px) {
     #fondo {
@@ -10,7 +36,10 @@
         background-color: #07501D;
         padding: 16px;
     }
-    span {
+
+
+    .palabras{
+        color: white;
         font-family: "Bree Serif", serif;
         font-weight: 400;
         font-style: normal;
@@ -47,13 +76,14 @@
     /* Ajuste de márgenes para redes sociales y logo */
     .iconosredes {
         padding-bottom: 10px;
-        color: rgb(0, 0, 0);
+        color: white;
         cursor: pointer;
+
     }
 
     .logo {
         margin: 10px auto;
-        display: block;
+        display: flex;
     }
 }
 
@@ -69,21 +99,26 @@
     }
 
 
+    .logoo{
+        justify-content: center;
+    }
 
-
-
-    span {
+    .palabras{
+        color: white;
         font-family: "Bree Serif", serif;
         font-weight: 400;
+        font-size: 20px;
         font-style: normal;
     }
+
+
 
     #fondo {
         background-color: #07501D;
     }
 
     .iconosredes {
-        color: rgb(0, 0, 0);
+        color: white;
         margin-right: 10px;
         cursor: pointer;
     }
@@ -94,7 +129,7 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-        border-left: 1px solid hsl(0, 0%, 0%);
+        border-left: 1px solid hsl(0, 0%, 100%);
 
     }
 

@@ -39,12 +39,12 @@
     
 
       <!--Menú desplegable para manejar todo el acceso de los usuarios en la página -->
-      <button mat-icon-button [matMenuTriggerFor]="usuario" ><mat-icon>person</mat-icon></button>
-      <mat-menu #usuario="matMenu">
-        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
-        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
-        <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
-        <button mat-menu-item (click)="ingresar()" *ngIf="logueado" routerLink="/registroinicio">Registrarse/Iniciar
+      <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+      <mat-menu #usuario="matMenu"  class="opciones">
+        <button mat-menu-item  class="opciones" (click)="ingresar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
+        <button mat-menu-item  class="opciones" (click)="ingresar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar Sesión</button>
+        <button mat-menu-item  class="opciones" (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
+        <button mat-menu-item  class="opciones" (click)="ingresar()" *ngIf="logueado" routerLink="/registroinicio">Registrarse/Iniciar
           Sesion</button>
       </mat-menu>
 

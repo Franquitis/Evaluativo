@@ -1,3 +1,10 @@
+*{
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .product-card {
     width: 100%;
     margin: 0 auto;
@@ -81,49 +88,49 @@ height: 300px;
   
 
 
-/*
-.card{
-    height: 500px;
+  .modal-header{
+    background-color: rgb(179, 179, 179);
+
+  }
+
+  .modal-description{
     background-color: rgb(218, 218, 218);
-    padding-right: 5px;
+  }
+
+  .des{
     padding-left: 5px;
-    padding-top: 5px;
-    }
-    .pp{
-        padding-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .pre{
+    padding-left: 5px;
+text-align: center;
+font-size: 30px;
+  }
+  .modal-footer{
+    background-color: rgb(179, 179, 179);
+  }
+  
+  .close{
+   background-color: red;
+  }
+
+  .agregar{
+    background-color: #FA641B;
+    color: white;
+    border: none;
+      }
     
-    }
+      .agregar:hover{
+    background-color: #863912;
+      }
     
-    img{
-        display: flex;
-        height: 300px;
-    }
+      .cerrar{
+    background-color: rgb(160, 47, 47);
+    border: none;
+    color: white;
+      }
     
-    
-    .agregar{
-        justify-content: center;
-        display: flex;
-        background-color: #FA641B;
-        
-    }
-    
-    .agregar:hover{
-        justify-content: center;
-        display: flex;
-        background-color: #9e4112;
-        
-    }
-    
-    .carrito{
-        margin-left: 5px;
-    }
-    
-    
-    .card:hover{
-        background-color: rgb(218, 218, 218);
-        box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
-        -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
-        -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.66);
-        cursor: pointer;
-    }
-        */
+      .cerrar:hover{
+        background-color: rgb(102, 0, 0);
+      }

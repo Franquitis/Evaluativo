@@ -1,36 +1,36 @@
 <div class="container mt-5">
     <div class="row">
-      <div class="col-md-4 pp" *ngFor="let producto of coleccionEstanterias">
-        <div class="card product-card ">
-          <!-- Imagen del producto -->
-          <img src="{{producto.imagen}}" class="card-img-top" alt="Biblioteca 5 Estantes">
-          
-          <!-- Contenido del card -->
-          <div class="card-body">
-            <!-- Título del producto -->
-            <h5 class="card-title">{{producto.nombre}}</h5>
-            <p class="card-text">{{producto.descripcion}}</p>
+        <div class="col-md-4 pp" *ngFor="let producto of coleccionEstanterias">
+            <div class="card product-card ">
+                <!-- Imagen del producto -->
+                <img src="{{producto.imagen}}" class="card-img-top" alt="Biblioteca 5 Estantes">
 
-            <div class="price-discount">
-                <span class="precio font-weight-bold">${{producto.precio}}</span>
-              </div>
-            
-            <!-- Cuotas y descripción adicional -->
-            <div class="installments text-muted">
-              Cuota Simple en 6 cuotas de $33.333
+                <!-- Contenido del card -->
+                <div class="card-body">
+                    <!-- Título del producto -->
+                    <h5 class="card-title">{{producto.nombre}}</h5>
+                    <p class="card-text">{{producto.descripcion}}</p>
+
+                    <div class="price-discount">
+                        <span class="precio font-weight-bold">${{producto.precio}}</span>
+                    </div>
+
+                    <!-- Cuotas y descripción adicional -->
+                    <div class="installments text-muted">
+                        Cuota Simple en 6 cuotas de $33.333
+                    </div>
+
+                    <!-- Botón promocionado -->
+                    <div class="comprar">
+                        <button class="btn btn-block mt-3" data-bs-toggle="modal" data-bs-target="#verMas"
+                            (click)="mostrarVer(producto)">Comprar ahora</button>
+                    </div>
+
+                </div>
             </div>
-  
-            <!-- Botón promocionado -->
-             <div class="comprar">
-                <button class="btn btn-block mt-3" data-bs-toggle="modal"
-                data-bs-target="#verMas" (click)="mostrarVer(producto)">Comprar ahora</button>
-             </div>
-           
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
 <!--<div class="row">
     <div class="col-lg-4 pp" *ngFor="let producto of coleccionEstanterias">
@@ -56,7 +56,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">{{productoSeleccionado.nombre}}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
@@ -64,19 +64,24 @@
                     <img src="{{productoSeleccionado.imagen}}" class="img-modal" alt="{{productoSeleccionado.alt}}">
                 </div>
 
-                <div class="mb-3">
+            </div>
+
+            <div class="modal-description">
+
+                <div class="mb-3 des">
                     {{productoSeleccionado.descripcion}}
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 pre">
                     ${{productoSeleccionado.precio}}
                 </div>
             </div>
 
+
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Agregar al
+                <button type="button" class="btn btn-outline-primary agregar" data-bs-dismiss="modal">Agregar al
                     carrito</button>
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-outline-secondary cerrar" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

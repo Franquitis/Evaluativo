@@ -1,3 +1,11 @@
+<div class="botonagregar ">
+<!-- BOTÓN DE AGREGAR NUEVOS PRODUCTOS -->
+<button type="button" class="btn btn-outline-primary agregar" data-bs-toggle="modal" data-bs-target="#agregarProducto">
+    Agregar un nuevo producto
+</button>
+</div>
+
+
 <!-- TABLA DE PRODUCTOS -->
 <table class="table">
     <thead>
@@ -14,7 +22,7 @@
 
     <tbody>
         <tr *ngFor="let producto of coleccionProductos">
-            <th scope="row">1</th>
+            <td scope="row">1</td>
 
             <td>
                 <img src="{{producto.imagen}}" alt="{{producto.alt}}" width="100px">
@@ -25,13 +33,12 @@
             <td>{{producto.categoria}}</td>
 
             <!-- ACCIONES -->
-            <td>
-                <button id="btn-edit" title="Editar" type="button" class="btn btn-outline-warning" 
+            <td class="acciones">
+                <button id="btn-edit" title="Editar" type="button" class="btn btn-outline-warning edit" 
                 data-bs-toggle="modal" data-bs-target="#editarProducto" (click)="mostrarEditar(producto)">
                     <mat-icon>edit</mat-icon>
                 </button>
-            </td>
-            <td>
+           
                 <button id="btn-delete" title="Eliminar" type="button" class="btn btn-outline-danger" 
                 data-bs-toggle="modal" data-bs-target="#eliminarProducto" (click)="mostrarBorrar(producto)">
                     <mat-icon>delete</mat-icon>
@@ -41,10 +48,6 @@
     </tbody>
 </table>
 
-<!-- BOTÓN DE AGREGAR NUEVOS PRODUCTOS -->
-<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
-    Agregar un nuevo producto
-</button>
 
 <!-- MODAL PARA AGREGAR NUEVO PRODUCTO -->
 <div class="modal fade" id="agregarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
