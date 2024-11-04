@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Producto } from 'src/app/models/producto';
 import { CrudService } from 'src/app/modules/admin/services/crud.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-card-armarios',
@@ -53,6 +54,20 @@ export class CardArmariosComponent {
    this.productoSeleccionado = info;
  }
 
+ productoAnadido(producto:Producto){
+  try{
+    Swal.fire({
+      title: "¡Pronto en funcionamiento!",
+      text: "El carrito de compras esta en mantenimiento",
+      icon: "info"
+    });
+  }catch(error){
+    Swal.fire({
+      title: "¡Pronto en funcionamiento!",
+      text: "El carrito de compras esta en mantenimiento" +error,
+      icon: "error"
+  });
+ }
 
- 
+}
 }

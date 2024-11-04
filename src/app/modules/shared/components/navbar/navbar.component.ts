@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/modules/autentificacion/services/auth.service';
 import { Router } from '@angular/router';
+import { Producto } from 'src/app/models/producto';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +12,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   logueado = true; // booleana para manejo de registro y el inicio de sesión
   deslogueado = false; // booleana para manejo de cierre de sesión
+  productoSeleccionado!: Producto;
 
   constructor(
     public servicioAuth: AuthService,
@@ -49,5 +52,22 @@ export class NavbarComponent {
         label_toggle!.innerHTML ='<i class="fa-solid fa-moon"></i>'
       }
     }
+  }
+
+
+  carrito(producto:Producto){
+    try{
+      Swal.fire({
+        title: "¡Pronto en funcionamiento!",
+        text: "El carrito de compras esta en mantenimiento",
+        icon: "info"
+      });
+    }catch(error){
+      Swal.fire({
+        title: "¡Pronto en funcionamiento!",
+        text: "El carrito de compras esta en mantenimiento" +error,
+        icon: "error"
+    });
+   }
   }
 }
