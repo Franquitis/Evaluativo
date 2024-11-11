@@ -27,7 +27,8 @@ export class TableComponent {
     descripcion: new FormControl('', Validators.required),
     categoria: new FormControl('', Validators.required),
     imagen: new FormControl('', Validators.required),
-    alt: new FormControl('', Validators.required)
+    alt: new FormControl('', Validators.required),
+    stock:new FormControl(0,  Validators.required)
   })
 
   constructor(public servicioCrud: CrudService) { }
@@ -48,7 +49,8 @@ export class TableComponent {
         descripcion: this.producto.value.descripcion!,
         categoria: this.producto.value.categoria!,
         imagen: this.producto.value.imagen!,
-        alt: this.producto.value.alt!
+        alt: this.producto.value.alt!,
+        stock: this.producto.value.stock!
       }
 
       await this.servicioCrud.crearProducto(nuevoProducto)
@@ -98,7 +100,8 @@ export class TableComponent {
       descripcion: productoSeleccionado.descripcion,
       categoria: productoSeleccionado.categoria,
       imagen: productoSeleccionado.imagen,
-      alt: productoSeleccionado.alt
+      alt: productoSeleccionado.alt,
+      stock:productoSeleccionado.stock
     })
   }
 
@@ -114,7 +117,8 @@ export class TableComponent {
       descripcion: this.producto.value.descripcion!,
       categoria: this.producto.value.categoria!,
       imagen: this.producto.value.imagen!,
-      alt: this.producto.value.alt!
+      alt: this.producto.value.alt!,
+      stock:this.producto.value.stock!
     }
 
     // Enviamos al método el id del producto seleccionado y los datos actualizados
